@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/dialogic/Dialog.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Screen/Game/Cutscene/TestCutscene3.gd" type="Script" id=2]
+[ext_resource path="res://Sprite/Stadium.png" type="Texture" id=3]
+[ext_resource path="res://Music/overcast.ogg" type="AudioStream" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 3 )
+
+[node name="Dialog" parent="." instance=ExtResource( 1 )]
+margin_left = 610.068
+margin_top = 499.05
+margin_right = 610.068
+margin_bottom = 499.05
+timeline = "timeline-1635684950.json"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -30.0

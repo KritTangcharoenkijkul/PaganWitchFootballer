@@ -1,0 +1,682 @@
+[gd_scene load_steps=54 format=2]
+
+[ext_resource path="res://Font/Time.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Font/Score.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Screen/Game/Selection/Play.gd" type="Script" id=3]
+[ext_resource path="res://Sprite/Item/Scissor.png" type="Texture" id=4]
+[ext_resource path="res://Sprite/Photo/CornerKick.png" type="Texture" id=5]
+[ext_resource path="res://Sprite/Photo/Field.png" type="Texture" id=6]
+[ext_resource path="res://Sprite/Item/offense.png" type="Texture" id=7]
+[ext_resource path="res://Sprite/Item/defense.png" type="Texture" id=8]
+[ext_resource path="res://Sprite/Item/ball.png" type="Texture" id=9]
+[ext_resource path="res://Sprite/Photo/Pass.png" type="Texture" id=10]
+[ext_resource path="res://Sprite/Photo/Goal.png" type="Texture" id=11]
+[ext_resource path="res://Sprite/Photo/Interception.png" type="Texture" id=12]
+[ext_resource path="res://Sprite/Photo/Goalkick.png" type="Texture" id=13]
+[ext_resource path="res://Sprite/Character/Main/IMG-2568.PNG" type="Texture" id=14]
+[ext_resource path="res://Sprite/Photo/CornerKick2.png" type="Texture" id=15]
+[ext_resource path="res://Sprite/Photo/Pass2.png" type="Texture" id=16]
+[ext_resource path="res://Sprite/Photo/Interception2.png" type="Texture" id=17]
+[ext_resource path="res://Sprite/Photo/Goal2.png" type="Texture" id=18]
+[ext_resource path="res://Sprite/Item/purpman.png" type="Texture" id=19]
+[ext_resource path="res://Sprite/Item/orange.png" type="Texture" id=20]
+[ext_resource path="res://Sprite/Photo/start.png" type="Texture" id=21]
+[ext_resource path="res://Screen/Game/Animation/Fireball.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Screen/Game/Animation/FireballOrange.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Sprite/Item/hammer.png" type="Texture" id=24]
+[ext_resource path="res://Sprite/Item/paper.png" type="Texture" id=25]
+[ext_resource path="res://Sprite/Item/sacrifice.png" type="Texture" id=26]
+[ext_resource path="res://Sprite/Item/hammerS.png" type="Texture" id=27]
+[ext_resource path="res://Sprite/Item/scissorS.png" type="Texture" id=28]
+[ext_resource path="res://Sprite/Item/paperS.png" type="Texture" id=29]
+[ext_resource path="res://Sprite/Photo/sacri2.png" type="Texture" id=30]
+[ext_resource path="res://Sprite/Photo/sacri1.png" type="Texture" id=31]
+[ext_resource path="res://Sprite/Item/symbol.png" type="Texture" id=32]
+[ext_resource path="res://Sprite/Item/sacris.png" type="Texture" id=33]
+[ext_resource path="res://Screen/Game/Animation/FireballMainScreenLiveVersion.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Screen/Game/Animation/FireballYellow.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Sprite/Photo/halftime.png" type="Texture" id=36]
+[ext_resource path="res://Sprite/Photo/fulltime.png" type="Texture" id=37]
+[ext_resource path="res://Music/sacrifice.ogg" type="AudioStream" id=38]
+[ext_resource path="res://Music/Laugh.ogg" type="AudioStream" id=39]
+[ext_resource path="res://Music/Presacrifice.ogg" type="AudioStream" id=40]
+[ext_resource path="res://Music/ballkicksound.ogg" type="AudioStream" id=41]
+[ext_resource path="res://Music/goal.ogg" type="AudioStream" id=42]
+[ext_resource path="res://Sprite/Character/Rival/IMG-2595.PNG" type="Texture" id=43]
+[ext_resource path="res://Music/alcemisttower.ogg" type="AudioStream" id=45]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 27 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 29 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 25 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 28 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 33 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 26 )
+region_rect = Rect2( 0, 0, 150, 150 )
+
+[sub_resource type="StreamTexture" id=9]
+flags = 4
+load_path = "res://.import/Goalkick.png-74089a3c622cb14553f9770d3631cac6.stex"
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="MarginContainer"]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0.027451, 0.0156863, 0, 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+margin_right = 1280.0
+margin_bottom = 720.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 30
+custom_constants/margin_top = 30
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer"]
+margin_left = 30.0
+margin_top = 30.0
+margin_right = 1250.0
+margin_bottom = 690.0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MarginContainer/VBoxContainer"]
+margin_right = 1220.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 1000, 100 )
+
+[node name="Score" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer"]
+margin_right = 1220.0
+margin_bottom = 100.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score"]
+margin_right = 1220.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer"]
+margin_right = 608.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+color = Color( 0.407843, 0, 1, 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect"]
+anchor_left = -0.00212741
+anchor_right = 0.0982742
+margin_left = 50.0
+margin_right = 155.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect/MarginContainer"]
+margin_top = 34.0
+margin_right = 166.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 1 )
+text = "Your Team"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect"]
+margin_left = 400.0
+margin_right = 555.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YourTeamScore" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect/MarginContainer2"]
+margin_top = 12.0
+margin_right = 155.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 2 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer"]
+margin_left = 612.0
+margin_right = 1220.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 1, 0.584314, 0, 1 )
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect2"]
+margin_right = 450.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect2/MarginContainer2"]
+margin_top = 34.0
+margin_right = 450.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Opponent Team"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect2"]
+margin_left = 50.0
+margin_right = 455.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OpponentTeamScore" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/Score/HBoxContainer/ColorRect2/MarginContainer3"]
+margin_top = 12.0
+margin_right = 405.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer"]
+margin_right = 1220.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+margin_bottom = 100.0
+color = Color( 1, 0.784314, 0.482353, 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer"]
+margin_top = 104.0
+margin_right = 1220.0
+margin_bottom = 254.0
+rect_min_size = Vector2( 1000, 150 )
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 1220.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 1080, 150 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/ColorRect"]
+margin_left = 0.414307
+margin_right = 1220.41
+margin_bottom = 150.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "1st
+0:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CurrentTime" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/ColorRect"]
+visible = false
+margin_right = 1220.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 1 )
+text = "1st 00:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer"]
+margin_top = 258.0
+margin_right = 1220.0
+margin_bottom = 660.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+margin_right = 1220.0
+margin_bottom = 402.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.0392157, 0.0666667, 0.0705882, 1 )
+
+[node name="Rock" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+margin_left = 450.0
+margin_top = 315.0
+margin_right = 540.0
+margin_bottom = 405.0
+focus_neighbour_left = NodePath("../Sacrifice")
+focus_neighbour_right = NodePath("../Paper")
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paper" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+margin_left = 565.0
+margin_top = 315.0
+margin_right = 655.0
+margin_bottom = 405.0
+focus_neighbour_left = NodePath("../Rock")
+focus_neighbour_right = NodePath("../Scissor")
+custom_styles/hover = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scissor" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+margin_left = 680.0
+margin_top = 315.0
+margin_right = 770.0
+margin_bottom = 405.0
+focus_neighbour_left = NodePath("../Paper")
+focus_neighbour_right = NodePath("../Sacrifice")
+custom_styles/hover = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sacrifice" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+margin_left = 300.0
+margin_top = 315.0
+margin_right = 390.0
+margin_bottom = 405.0
+focus_neighbour_left = NodePath("../Scissor")
+focus_neighbour_right = NodePath("../Rock")
+custom_styles/hover = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Opponent_Choice" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+margin_left = 689.059
+margin_top = 61.0
+margin_right = 971.059
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Choice"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="currentleft" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+margin_left = 1093.76
+margin_top = 215.756
+margin_right = 1170.76
+margin_bottom = 278.756
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "3"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fireball" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect" instance=ExtResource( 22 )]
+visible = false
+position = Vector2( 166.867, 200.123 )
+
+[node name="Fireball2" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect" instance=ExtResource( 23 )]
+visible = false
+position = Vector2( 1070, 200 )
+
+[node name="IMG-2568" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 160, 180 )
+texture = ExtResource( 14 )
+
+[node name="symbol" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 65, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="symbol2" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 155, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="symbol3" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 245, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="symbol4" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 975, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="symbol5" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 1065, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="symbol6" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 1155, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 32 )
+
+[node name="purpman" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 70, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 19 )
+
+[node name="purpman2" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 160, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 19 )
+
+[node name="purpman3" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 250, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 19 )
+
+[node name="orange" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 980, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 20 )
+
+[node name="orange2" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 1070, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 20 )
+
+[node name="orange3" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 1160, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 20 )
+
+[node name="IMG-2569" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+position = Vector2( 1070, 180 )
+texture = ExtResource( 43 )
+
+[node name="FireballOrange" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect" instance=ExtResource( 23 )]
+position = Vector2( 740, 150 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="FireballPurple" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect" instance=ExtResource( 35 )]
+position = Vector2( 480, 150 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="paperself" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 482, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 25 )
+
+[node name="scissorself" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 483.059, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 4 )
+
+[node name="hammer" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 482, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 24 )
+
+[node name="paperopp" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 741, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 25 )
+
+[node name="scissoropp" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 741, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 4 )
+
+[node name="hammeropp" type="Sprite" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+visible = false
+position = Vector2( 741, 160 )
+scale = Vector2( 0.929714, 0.929714 )
+texture = ExtResource( 24 )
+
+[node name="Fireball3" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect" instance=ExtResource( 34 )]
+visible = false
+position = Vector2( 609.27, 188.647 )
+scale = Vector2( 0.929714, 0.929714 )
+
+[node name="presac" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 40 )
+volume_db = -10.0
+
+[node name="sac" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 38 )
+volume_db = -10.0
+
+[node name="win" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 41 )
+volume_db = -20.0
+
+[node name="draw" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 41 )
+volume_db = -20.0
+
+[node name="lose" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 41 )
+volume_db = -20.0
+
+[node name="goal" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 42 )
+volume_db = -10.0
+
+[node name="laugh" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 39 )
+volume_db = -10.0
+
+[node name="song" type="AudioStreamPlayer" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect"]
+stream = ExtResource( 45 )
+volume_db = -20.0
+
+[node name="CornerKick" type="Sprite" parent="."]
+position = Vector2( 307, 209 )
+texture = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="CornerKick"]
+position = Vector2( 0, 15 )
+
+[node name="Goal" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 11 )
+
+[node name="Goalkick2" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = SubResource( 9 )
+
+[node name="Pass" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( -0.136078, -15.4997 )
+texture = ExtResource( 10 )
+
+[node name="CornerKick" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 5 )
+
+[node name="CornerKick2" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 15 )
+
+[node name="Goal2" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 18 )
+
+[node name="Goalkick" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0.920135, -15.8175 )
+texture = ExtResource( 13 )
+
+[node name="Interception2" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 17 )
+
+[node name="Pass2" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 16 )
+
+[node name="Interception" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 12 )
+
+[node name="start" type="Sprite" parent="CornerKick/Sprite"]
+position = Vector2( 0, -15 )
+texture = ExtResource( 21 )
+
+[node name="sacri1" type="Sprite" parent="CornerKick/Sprite"]
+visible = false
+position = Vector2( 200.851, -14.9033 )
+texture = ExtResource( 31 )
+
+[node name="sacri2" type="Sprite" parent="CornerKick/Sprite"]
+visible = false
+position = Vector2( -201.822, -15.4648 )
+texture = ExtResource( 30 )
+
+[node name="halftime" type="Sprite" parent="CornerKick/Sprite"]
+visible = false
+position = Vector2( 0, -15 )
+texture = ExtResource( 36 )
+
+[node name="fulltime" type="Sprite" parent="CornerKick/Sprite"]
+visible = false
+position = Vector2( 0, -15 )
+texture = ExtResource( 37 )
+
+[node name="Field" type="Sprite" parent="."]
+position = Vector2( 974.046, 208 )
+texture = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Field"]
+
+[node name="ball1" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( -226.043, 0.195526 )
+texture = ExtResource( 9 )
+
+[node name="offense" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( 10.0447, 0.195557 )
+texture = ExtResource( 7 )
+
+[node name="defense" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( -15.7913, 0.640991 )
+texture = ExtResource( 8 )
+
+[node name="ball2" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( -127.599, 0.195526 )
+texture = ExtResource( 9 )
+
+[node name="ball3" type="Sprite" parent="Field/Sprite"]
+position = Vector2( -1.53699, 0.195526 )
+texture = ExtResource( 9 )
+
+[node name="ball4" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( 115.616, 0.195526 )
+texture = ExtResource( 9 )
+
+[node name="ball5" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( 225.642, 0.195526 )
+texture = ExtResource( 9 )
+
+[node name="ball6" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( -259.452, -59.4947 )
+texture = ExtResource( 9 )
+
+[node name="ball7" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( -127.154, -50.5857 )
+texture = ExtResource( 9 )
+
+[node name="ball8" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( 114.725, -51.4766 )
+texture = ExtResource( 9 )
+
+[node name="ball9" type="Sprite" parent="Field/Sprite"]
+visible = false
+position = Vector2( 258.605, -59.9401 )
+texture = ExtResource( 9 )
+
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect/Rock" to="." method="_on_Rock_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect/Paper" to="." method="_on_Paper_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect/Scissor" to="." method="_on_Scissor_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/ColorRect/Sacrifice" to="." method="_on_Sacrifice_pressed"]
