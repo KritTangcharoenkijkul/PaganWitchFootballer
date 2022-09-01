@@ -1,0 +1,47 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Yay! I managed to somehow win this match.\nPumpy is great as well and I am just lucky to beat her!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Tsundere",
+			"text": "Sadly, I have to focus on next match but still...\n..."
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Happy",
+			"text": "Thank you very much for playing this game!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "FootballGrown",
+			"text": "Let's meet again in the future!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1635515236.json",
+		"name": "Finish"
+	}
+}

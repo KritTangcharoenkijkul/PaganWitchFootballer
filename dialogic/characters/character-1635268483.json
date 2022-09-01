@@ -1,0 +1,24 @@
+{
+	"color": "#ffffa100",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1635268483.json",
+	"mirror_portraits": false,
+	"name": "Pumpy Kingsly",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Sprite/Character/Rival/IMG-2595.PNG"
+		},
+		{
+			"name": "Angry",
+			"path": "res://Sprite/Character/Rival/IMG-2594.PNG"
+		}
+	],
+	"scale": 300
+}

@@ -1,0 +1,48 @@
+{
+	"color": "#ff8b69f5",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1635268462.json",
+	"mirror_portraits": false,
+	"name": "Wendi Granok",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Sprite/Character/Main/IMG-2568.PNG"
+		},
+		{
+			"name": "Happy",
+			"path": "res://Sprite/Character/Main/IMG-2569.PNG"
+		},
+		{
+			"name": "Calm",
+			"path": "res://Sprite/Character/Main/IMG-2570.PNG"
+		},
+		{
+			"name": "Triggered",
+			"path": "res://Sprite/Character/Main/IMG-2571.PNG"
+		},
+		{
+			"name": "Football",
+			"path": "res://Sprite/Character/Main/IMG-2572.PNG"
+		},
+		{
+			"name": "FootballGrown",
+			"path": "res://Sprite/Character/Main/IMG-2578.PNG"
+		},
+		{
+			"name": "Tsundere",
+			"path": "res://Sprite/Character/Main/IMG-2579.PNG"
+		},
+		{
+			"name": "Angry",
+			"path": "res://Sprite/Character/Main/IMG-2581.PNG"
+		}
+	],
+	"scale": 300
+}

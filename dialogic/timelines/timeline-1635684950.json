@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Tsundere",
+			"text": "So it's a draw it seems?"
+		},
+		{
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Wow, so original!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Calm",
+			"text": "Anyway, that's was fun Pumpy. Let's hope we meet again soon!"
+		},
+		{
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "The next time, I meet you. I will make sure that you will regret it!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1635684950.json",
+		"name": "Draw"
+	}
+}

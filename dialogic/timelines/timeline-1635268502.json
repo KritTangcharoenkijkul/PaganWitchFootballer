@@ -1,0 +1,142 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "At the Football stadium on an important football derby"
+		},
+		{
+			"action": "join",
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Tsundere",
+			"text": "Why did I have to apply to this place?\nI only meant to apply as a joke!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "And now I am the head coach of this football team."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "Calm",
+			"text": "This is Wendi Granok. She is the new manager of this football team.\nShe graduated from a certain magic school and starts looking for job.\nHaphazardly, she applied for the football manager job and yet they hired her almost immediately.\nFor first few matches, she managed to use her dark magic for the sake of her team leading them to guaranteed success.\nSome footballer has died but that is a sacrifice she is willing to make!\n...But now...\nNow she has to face her biggest opposition yet!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "At least let try my best for another day then!"
+		},
+		{
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The best you can do right now is to forfeit the match to me gracefully."
+		},
+		{
+			"action": "join",
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_002",
+			"mirror": true,
+			"portrait": "Angry",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"action": "join",
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_002",
+			"mirror": true,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Tsundere",
+			"text": "Pumpy, what are you doing here? I thought you went back to build your pumpkin business?"
+		},
+		{
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Most of the school said something like the children can't come to school so they can't have halloween party this year.\nI can't sell my pumpkin and I have to look for part time job now!\nLuckily, it seems lucky that I also became football manager as well as you."
+		},
+		{
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "After I beat you, I will turn all football into a pumpkin and make the pumpkin booming than it has ever been."
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Have fun building your pumpkin empire but for today's game\nI will be the one to beat you!\nSee you soon Pumpy, I have the team to prepare!"
+		},
+		{
+			"action": "leaveall",
+			"character": "character-1635268483.json",
+			"event_id": "dialogic_003"
+		},
+		{
+			"action": "join",
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "Football",
+			"text": "Fine, I have to do this myself then! Here is some guide for me!\nI have use the power of rock, paper and scissor to make sure that I will beat her to the ground!\nLuckily, I have the power of sacrifice to ensure my victory against her.\nThe sacrifice button will guarantee the win for that round so it will be great to use it!\nBut be wise since you can only use it 3 times.\nPumpy can use it as well so make sure to use it at the most ideal time!"
+		},
+		{
+			"character": "character-1635268462.json",
+			"event_id": "dialogic_001",
+			"portrait": "FootballGrown",
+			"text": "Now, Let the magic begin!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1635268502.json",
+		"name": "Introduction"
+	}
+}
