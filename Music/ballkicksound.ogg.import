@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ballkicksound.ogg-2519bb8f228d3380d45453eb630c5398.oggstr"
+
+[deps]
+
+source_file="res://Music/ballkicksound.ogg"
+dest_files=[ "res://.import/ballkicksound.ogg-2519bb8f228d3380d45453eb630c5398.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

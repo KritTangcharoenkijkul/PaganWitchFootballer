@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/NightOfChaos.ogg-053455b0149ea530733a6f9d22e99c05.oggstr"
+
+[deps]
+
+source_file="res://Music/NightOfChaos.ogg"
+dest_files=[ "res://.import/NightOfChaos.ogg-053455b0149ea530733a6f9d22e99c05.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/overcast.ogg-0e38abf6714abec5c219b7684f6b8e15.oggstr"
+
+[deps]
+
+source_file="res://Music/overcast.ogg"
+dest_files=[ "res://.import/overcast.ogg-0e38abf6714abec5c219b7684f6b8e15.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

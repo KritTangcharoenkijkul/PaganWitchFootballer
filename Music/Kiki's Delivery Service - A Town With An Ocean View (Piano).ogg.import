@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Kiki's Delivery Service - A Town With An Ocean View (Piano).ogg-85bff051c0f2ffdbe919fb173884bf1f.oggstr"
+
+[deps]
+
+source_file="res://Music/Kiki's Delivery Service - A Town With An Ocean View (Piano).ogg"
+dest_files=[ "res://.import/Kiki's Delivery Service - A Town With An Ocean View (Piano).ogg-85bff051c0f2ffdbe919fb173884bf1f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
